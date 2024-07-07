@@ -3,223 +3,355 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- =====BOX ICONS====== -->
+    <title>My Programming Blog</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
-
-    <title>davidwebtech</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#" style="color: rgb(12, 74, 99)" class="nav__logo"
-            >DAVID'S-PORTFOLIO</a
-          >
-        </div>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+  <body class="text-light">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand text-warning" href="#">David's Blog</a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#about">About Me</a>
             </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#skills">My Skills</a>
             </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#projects">Projects</a>
             </li>
-
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#videos"
+                >Teaching Videos</a
+              >
             </li>
-             <li class="nav__item">
-              <a href="https://github.com/davidkantel" class="nav__link">GitHub</a>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#posts">Blog Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
+      </div>
+    </nav>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
+    <div id="bloghome" class="row p-5 bg-dark text-light">
+      <div class="col-md-8 mx-auto">
+        <h3 class="display-4">Welcome to My Blog 🚶‍♀️🚶‍♂️</h3>
+        <p class="lead">Sharing my journey and knowledge in programming</p>
+      </div>
+    </div>
+
+    <section id="about" class="container my-5 bg-dark text-light">
+      <h2 class="text-center text-warning my-5">About Me</h2>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>
+            Hello ✋! My name is David Ekai, and I am a passionate
+            <span class="text-warning">Full Stack Developer</span> . My journey
+            into programming started in 2022, where I wrote my first lines of
+            code and was proud of it 🦚🦚.
+          </p>
+          <p>
+            I pursuied a degree in Information Techonolgy and have developed a
+            strong foundation in various programming languages and frameworks.
+            My primary focus is on web development, where I have experience in
+            both front-end and back-end technologies.
+          </p>
+          <p>
+            My goal is to become a Complete Full Stack Developer and Teaching
+            Programming Fundamentals and share my knowledge with others who are
+            interested to learn. I believe that teaching is one of the best ways
+            to solidify one's understanding and make a positive impact on
+            others' lives. Through this blog, I aim to share my insights,
+            tutorials, and experiences to help others on their programming
+            journey.
+          </p>
+          <p>
+            In my free time, I enjoy contributing to open-source projects,
+            participating in hackathons, and staying updated with the latest
+            trends in technology. My hobby is reading trend technologies and
+            love exploring new trends in web development.
+          </p>
+          <p>
+            Thank you for visiting my blog! Feel free to reach out to me through
+            the contact section if you have any questions or just want to
+            connect.
+          </p>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hi,<br />I'am <span class="home__title-color">David</span><br />
-            Full Stack Developer
-          </h1>
+    <section id="skills" class="container my-2">
+      <h2 class="text-center text-warning my-5">My Skills 🤹‍♀️</h2>
+      <ul class="list-group bg-success w-50 mx-auto">
+        <li class="list-group-item">HTML -> 99%</li>
+        <li class="list-group-item">CSS -> 98%</li>
+        <li class="list-group-item">JavaScript -> 95%</li>
+        <li class="list-group-item">ReactJS -> 99%</li>
+        <li class="list-group-item">Python -> 80%</li>
+        <li class="list-group-item">Django - > 79%</li>
 
-          <a href="#contact" class="button">Contact</a>
-        </div>
-      </section>
+        <li class="list-group-item">PHP -> 80%</li>
+        <li class="list-group-item">Laravel -> 87%</li>
 
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
+        <li class="list-group-item">MySQL -> 89%</li>
+        <li class="list-group-item">GIT/GITHUB -> 93%</li>
+      </ul>
+    </section>
 
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="assets/img/3419.jpg" alt="" />
+    <section id="projects" class="container my-5">
+      <h2 class="text-center text-warning text-center">Projects In Github</h2>
+      <p class="text-success mx-auto">
+        To view the project Please send request for the github link in the
+        contact section, Waiting...........
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Pyroll Management System</h5>
+              <p class="card-text">Description of Project 1.</p>
+              <a href="#contact" class="btn btn-primary">View Project</a>
+            </div>
           </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Human Resource System</h5>
+              <a href="#contact" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Ecommerce Website</h5>
+              <a href="#contact" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <div>
-            <h2 class="about__subtitle">I'am David Ekai</h2>
-            <p class="about__text">
-              Hello! I'm a passionate and dedicated full stack developer with a
-              keen interest in crafting robust and scalable web applications.
-              With a solid foundation in both frontend and backend technologies,
-              I specialize in creating seamless user experiences and efficient
-              front-end and backend systems.
+      <div class="row my-5">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Personal Portfolio</h5>
+              <a href="#contact" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Blog</h5>
+              <a href="#contact" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Employees Management System</h5>
+              <a href="#contact" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="container my-5">
+      <h2 class="text-center text-warning my-4">Videos 📺</h2>
+      <div class="row my-2">
+        <div class="col">
+          <div class="embed-responsive embed-responsive-16by9">
+            <!-- Replace with your video embed code -->
+            <video width="320" height="240" controls>
+              <source src="/2024-06-27_21-52-18.mp4" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            <h4>HTML and CSS</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video width="320" height="240" controls>
+              <source src="/2024-06-27_21-52-18.mp4" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            <h4>PHP and LARAVEL</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video width="320" height="240" controls>
+              <source src="/2024-06-18_09-15-27.mp4" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            <h4>JAVASCRIPT and REACT</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more videos as needed -->
+    </section>
+
+    <section id="posts" class="container my-5 bg-dark text-light p-5">
+      <h2 class="text-center text-warning my-5">Blog Posts 📫</h2>
+      <div class="row">
+        <div class="col">
+          <div class="post mb-4">
+            <h3 class="text-info">Understanding HTML and CSS</h3>
+            <p>
+              HTML (HyperText Markup Language) is the standard markup language
+              for creating web pages. CSS (Cascading Style Sheets) is used to
+              style and layout web pages. Understanding how to use HTML and CSS
+              is the foundation of web development...
             </p>
-            <a
-              href="./assets/CV.docx"
-              onclick="cvdownload()"
-              class="button"
-              download
-              >Download Resume</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
-            <p class="skills__text">
-              I have extensive experience working with the following
-              technologies:
+            <p class="more-content" style="display: none">
+              With HTML, you structure your content, while CSS is used for
+              designing and laying out your pages. Mastery of these technologies
+              is essential for any web developer.
             </p>
-            <ul>
-              <li>
-                <strong>Frontend:</strong> HTML, CSS(Bootstrap/Tailwind), JavaScript(React.js)
-              </li>
-              <li><strong>Backend:</strong> Python(Django) and PHP(Laravel)</li>
-              <li><strong>Version Control:</strong> Git, GitHub</li>
-            </ul>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-html5 skills__icon"></i>
-                <span class="skills__name">HTML5</span>
-              </div>
-              <div class="skills__bar skills__html"></div>
-              <div>
-                <span class="skills__percentage">95%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-css3 skills__icon"></i>
-                <span class="skills__name">CSS3/BOOTSTRAP5</span>
-              </div>
-              <div class="skills__bar skills__css"></div>
-              <div>
-                <span class="skills__percentage">85%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-javascript skills__icon"></i>
-                <span class="skills__name">JAVASCRIPT/REACT</span>
-              </div>
-              <div class="skills__bar skills__js"></div>
-              <div>
-                <span class="skills__percentage">75%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-paint skills__icon"></i>
-                <span class="skills__name">Python/Django</span>
-              </div>
-              <div class="skills__bar skills__ux"></div>
-              <div>
-                <span class="skills__percentage">85%</span>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <img
-              src="assets/img/code.png"
-              alt=""
-              class="skills__img"
-              width="400"
-            />
+            <button class="btn btn-primary read-more">Read More</button>
           </div>
         </div>
-      </section>
-
-      <!--===== CONTACT =====-->
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contact Me</h2>
-
-        <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input
-              type="text"
-              placeholder="Name"
-              class="contact__input"
-              required
-            />
-            <input
-              type="mail"
-              placeholder="Email"
-              class="contact__input"
-              required
-            />
-            <textarea
-              name=""
-              id=""
-              cols="5"
-              rows="5"
-              class="contact__input"
-              required
-            ></textarea>
-            <input
-              type="submit"
-              value="Submit"
-              class="contact__button button"
-            />
-          </form>
+        <div class="col">
+          <div class="post mb-4">
+            <h3 class="text-info">Introduction to JavaScript</h3>
+            <p>
+              JavaScript is a versatile programming language that allows you to
+              add interactivity to your web pages. Learning JavaScript opens up
+              many possibilities for creating dynamic and engaging user
+              experiences...
+            </p>
+            <p class="more-content" style="display: none">
+              JavaScript is the backbone of web interactivity. By understanding
+              JavaScript, you can create applications that respond to user
+              actions, manipulate the DOM, and interact with APIs.
+            </p>
+            <button class="btn btn-primary read-more">Read More</button>
+          </div>
         </div>
-        <div class="cont">
-          <ul>
-            <strong>Email:ekadelidavid@gmail.com</strong>
-          </ul>
-          <ul>
-            <strong>Call:0758287940</strong>
-          </ul>
+      </div>
+      <div class="row my-2">
+        <div class="col">
+          <div class="post mb-4">
+            <h3 class="text-info">Getting Started with Laravel</h3>
+            <p>
+              Laravel is a PHP framework designed for web artisans. It
+              simplifies many common tasks in web development, such as routing,
+              authentication, and sessions...
+            </p>
+            <p class="more-content" style="display: none">
+              With Laravel, you can build robust applications quickly. Its
+              elegant syntax, powerful tools, and comprehensive documentation
+              make it a favorite among developers.
+            </p>
+            <button class="btn btn-primary read-more">Read More</button>
+          </div>
         </div>
-      </section>
-    </main>
+        <div class="col">
+          <div class="post mb-4">
+            <h3 class="text-info">Introduction to ReactJS</h3>
+            <p>
+              ReactJS is a popular JavaScript library for building user
+              interfaces. It allows you to create reusable UI components and
+              manage the state of your application efficiently...
+            </p>
+            <p class="more-content" style="display: none">
+              ReactJS is component-based, which means you can build encapsulated
+              components that manage their own state. This approach leads to
+              cleaner and more maintainable code.
+            </p>
+            <button class="btn btn-primary read-more">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-      <p class="footer__title">David's PortFolio</p>
+    <section id="contact" class="container my-2">
+      <h2 class="text-center text-warning my-2">Contact 🤙☎</h2>
+      <form class="bg-success p-5 mx-auto">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            placeholder="Add message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning mt-2">SEND</button>
+      </form>
+    </section>
 
-      <p class="footer__copy">@davidekai. &#169; All rigths reserved</p>
-      <a href="#home"> <button class="arrow">&#8593;</button> </a>
+    <footer class="text-white text-center py-3">
+      <p>&copy;David's Blog 2024 All Right Deserved</p>
+      <p>
+        <a href="#about" class="text-white">About Me</a> |
+        <a href="#skills" class="text-white">My Skills</a> |
+        <a href="#projects" class="text-white">Projects</a> |
+        <a href="#videos" class="text-white">Teaching Videos</a> |
+        <a href="#posts" class="text-white">Blog Posts</a> |
+        <a href="#contact" class="text-white">Contact</a>
+      </p>
+      <a href="#bloghome"
+        ><button class="btn btn-warning">Back Home ⬆</button>
+      </a>
     </footer>
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
